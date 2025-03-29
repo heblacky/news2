@@ -1,0 +1,17 @@
+{
+  "name": "news2",
+  "version": "1.0.0",
+  "description": "News website",
+  "main": "index.html",
+  "scripts": {
+    "dev": "serve",
+    "build": "echo 'No build step needed'",
+    "start": "serve"
+  },
+  "dependencies": {
+    "serve": "^14.2.1"
+  },
+  "engines": {
+    "node": ">=18.x"
+  }
+} 
