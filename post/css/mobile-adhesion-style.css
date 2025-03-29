@@ -1,0 +1,56 @@
+#mobile-adhesion {
+    display: none;
+}
+@media(max-width: 1025px) {
+    #mobile-adhesion {
+        height: 90px;
+        width: 100%;
+        position: fixed;
+        background: #f0f0f0;
+        border-top: 1px solid #ccc;
+        bottom: 0px;
+        display: block;
+        z-index: 9999;
+    }
+
+    #mobile-adhesion.closed {
+        display: none !important;
+    }
+
+    .site-footer {
+        padding-bottom: 90px;
+    }
+}
+@media(max-width: 480px) {
+    #mobile-adhesion {
+        height: 50px;
+    }
+}
+
+#mobile-adhesion.closed .close-mobile-adhesion {
+    display: none;
+}
+
+#mobile-adhesion .close-mobile-adhesion {
+    content: '';
+    width: 27px;
+    height: 27px;
+    text-indent: 2000px;
+    overflow: hidden;
+    background: url(../images/close_54x54.png);
+    background-position: center;
+    background-size: contain;
+    position: absolute;
+    right: 20px;
+    top: -12px;
+    cursor: pointer;
+    z-index: 99999;
+}
+
+#mobile-adhesion .close-mobile-adhesion:focus:not(:focus-visible) {
+	outline: 0;
+}
+
+#mobile-adhesion .close-mobile-adhesion:focus {
+	outline: 2px solid #000;
+}
